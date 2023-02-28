@@ -3,7 +3,7 @@ const express = require('express');
 const { completeApiModified } = require('./controller');
 const app = express();
 
-app.get('/', async (req, res) => {
+app.get('/products', async (req, res) => {
    return res.send(await completeApiModified());
   });
 
