@@ -1,3 +1,27 @@
+
+const addPropertiePlatforms = game => {
+    const platformsProperty = game.platforms.map(property => property.platform.name);
+    game.platforms = platformsProperty;
+    
+};
+
+const addPropertieGenres = game => {
+    const genresProperty = game.genres.map(property => property.name);
+    game.genres = genresProperty;
+    
+};
+
+const addPropertieStore =  game => {
+    const storeProperty = game.stores.map(property => property.store.name);
+    game.stores = storeProperty;
+    
+};
+const addPropertyImages = game => {
+    const imagesProperty = game.short_screenshots.map(property => property.image);
+    game.images = imagesProperty;
+    
+};
+
 const addPrice = (game) => {
     if(game.name === "PAYDAY 2") {
         game.price = '9.99'
@@ -174,9 +198,17 @@ const addPrice = (game) => {
     if(game.name === "Star Wars Jedi: Fallen Order") {
         game.price = '39.99'
     }
-    return game;
+    
 }
-
-module.exports = {
-    addPrice
-}
+ 
+const addAllProperties = game => {
+    addPrice(game);
+    addPropertieGenres(game);
+    addPropertiePlatforms(game);
+    addPropertieStore(game);
+    addPropertyImages(game);
+    const {id,name,background_image,rating,playtime,platforms,genres,stores,price,images  } = game;
+    const gameClear = { id,name,background_image,rating,playtime,platforms,genres,stores,price,images };
+    return gameClear;
+};
+module.exports ={ addAllProperties };

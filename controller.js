@@ -1,18 +1,17 @@
-const { addPrice } = require('./addPrice');
+const { addAllProperties } = require('./addAllProperties');
 const { default: axios } = require("axios");
 const fs = require('fs');
 
-
-const modifiedApiGamesPage= async (indexPage) =>{
-    const responseGames = await axios.get(`https://api.rawg.io/api/games?key=31d13ffee1bf425387ca37ee28e66091&page=${indexPage}`);
-    const games = await responseGames.data;
+const formatedApiGamesPage= async (pageNumber) =>{
+    const responseApi = await axios.get(`https://api.rawg.io/api/games?key=31d13ffee1bf425387ca37ee28e66091&page=${pageNumber}`);
+    const games = await responseApi.data;
     let clearGames = [];
     games.results.forEach(game => {
-        const {id,name,released,background_image,rating,playtime,platforms,genres,stores,tags,short_screenshots} = game;
-        const gameFilteredWithoutPrice = {id,name,released,background_image,rating,playtime,platforms,genres,stores,tags,short_screenshots};
-        const gameCompleteProperties = addPrice(gameFilteredWithoutPrice);
+        const {id,name,released,background_image,rating,playtime,platforms,genres,stores,short_screenshots} = game;
+        const gameFilteredWithoutPrice = {id,name,released,background_image,rating,playtime,platforms,genres,stores,short_screenshots};
+        // const gameCompleteProperties = addPrice(gameFilteredWithoutPrice); 
+        const gameCompleteProperties = addAllProperties(gameFilteredWithoutPrice); 
         clearGames.push(gameCompleteProperties);
-        // clearGames.push(gameFilteredWithoutPrice);
     });
     // const gamesJSON = JSON.stringify(clearGames);
     // console.log(clearGames);
@@ -26,17 +25,16 @@ const modifiedApiGamesPage= async (indexPage) =>{
 
 const completeApiModified = async () => {
     let pagesModified = [];
-    for (let indexPage = 1; indexPage < 6; indexPage++) {
-       const modifiedPages = await modifiedApiGamesPage(indexPage);
+    for (let pageNumber = 1; pageNumber < 6; pageNumber++) {
+       const modifiedPages = await formatedApiGamesPage(pageNumber);
        pagesModified =  [...pagesModified,...modifiedPages];
     };
     const clearArray = pagesModified.filter(game => {
         if(game.price) return game;
-    })
-    console.log(clearArray.length)
+    });
+    console.log(clearArray.length);
     return clearArray;
-}
-
+};
 
 
 

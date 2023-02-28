@@ -7,7 +7,7 @@ app.get('/products', async (req, res) => {
    return res.send(await completeApiModified());
   });
 
-const PORT = process.env.PORT || 3020;
+const PORT = process.env.PORT || 3002;
   app.listen(PORT, () => {
     console.log(`La aplicación está escuchando en el puerto ${PORT}`);
   });
