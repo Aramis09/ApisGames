@@ -22,17 +22,21 @@ const formatedApiGamesPage= async (pageNumber) =>{
     return clearGames;
 };
 
+let clearArray = []; 
 
 const completeApiModified = async () => {
-    let pagesModified = [];
-    for (let pageNumber = 1; pageNumber < 6; pageNumber++) {
-       const modifiedPages = await formatedApiGamesPage(pageNumber);
-       pagesModified =  [...pagesModified,...modifiedPages];
+    if(!clearArray.length){
+        let pagesModified = [];
+        for (let pageNumber = 1; pageNumber < 6; pageNumber++) {
+           const modifiedPages = await formatedApiGamesPage(pageNumber);
+           pagesModified =  [...pagesModified,...modifiedPages];
+        };
+        clearArray = pagesModified.filter(game => {
+            if(game.price) return game;
+        });
+        console.log(clearArray.length);
+        return clearArray;
     };
-    const clearArray = pagesModified.filter(game => {
-        if(game.price) return game;
-    });
-    console.log(clearArray.length);
     return clearArray;
 };
 
