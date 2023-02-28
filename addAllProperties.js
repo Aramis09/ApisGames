@@ -304,7 +304,7 @@ const addAllProperties = game => {
     addPropertieStore(game);
     addPropertyImages(game);
     const {id,name,background_image,rating,playtime,platforms,genres,stores,price,images,description  } = game;
-    const gameClear = { id,name,background_image,rating,playtime,platforms,genres,stores,price,images };
+    const gameClear = { id,name,background_image,rating,playtime,platforms,genres,stores,price,images,description };
     return gameClear;
 };
 module.exports ={ addAllProperties };
