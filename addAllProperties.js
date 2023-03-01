@@ -294,6 +294,121 @@ const addPrice = (game) => {
         game.price = 'free';
         game.description = 'Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.)';
     };
+    if(game.name ==='Mad Max'){
+        game.price='15.99'
+        game.description='Play as Mad Max, a reluctant hero and survivor. Max just longs to leave the madness behind and find peace.'
+    }
+    if(game.name ==='Left 4 Dead'){
+        game.price='8.50'
+        game.description='From Valve comes Left 4 Dead, a cooperative action-horror game where up to four players face off against hordes of zombies and terrifying mutant monsters in an epic fight for survival.'
+    }
+    if(game.name ==='Metro 2033 Redux'){
+        game.price='14.99'
+        game.description=`In 2013 the world was devastated by an apocalyptic event, annihilating almost all mankind and turning the Earth's surface into a poisonous wasteland. A handful of survivors took refuge in the depths of the Moscow underground, and human civilization entered a new Dark Age. The year is 2033. `
+    }
+    if(game.name ==='BioShock 2 Remastered'){
+        game.price='3.49'
+        game.description=`In BioShock 2 you will step into the boots of Rapture's most iconic inhabitant, the Big Daddy, traveling through the decrepit and beautiful ruined city, pursuing an uncertain goal in search of answers and your own survival.`
+    }
+
+    if(game.name ==='Monster Hunter: World'){
+        game.price='24.99'
+        game.description=`Welcome to a new world! In Monster Hunter: World, the latest installment in the series, you will be able to enjoy the best gaming experience, using all the resources at your disposal to stalk monsters in a new world brimming with excitement and surprises.`
+    }
+    
+    if(game.name ==='NieR:Automata'){
+        game.price='29.99'
+        game.description=`NieR: Automata tells the story of androids 2B, 9S and A2, who fight to reclaim the machine-run dystopian world that has been invaded by powerful mechanical life forms.`
+    }
+    
+    if(game.name ==='XCOM: Enemy Unknown'){
+        game.price='2.99'
+        game.description=`XCOM: Enemy Unknown puts you in command of a secret paramilitary organization called XCOM. As XCOM Commander, you will defend Earth from a terrifying alien invasion by managing resources, developing technologies, and overseeing both combat strategies and individual unit tactics.`
+    }
+    
+    if(game.name ==='Fall Guys: Ultimate Knockout'){
+        game.price='5.99'
+        game.description=`This is where it all began… Season 1 of Ultimate Knockout had Fall Guys stumbling into the world, full of colorful classic rounds including Door Dash, See Saw and Slime Climb!`
+    }
+    
+    if(game.name ==='Brutal Legend'){
+        game.price='10.99'
+        game.description=`Brütal Legend is an action-adventure that marries visceral action combat with open-world freedom. Set in a universe somewhere between Lord of the Rings and Spinal Tap, it’s a fresh take on the action/driving genre, which in this case is full of imitation cover bands, demons intent on enslaving humanity and Heavy metal tunes.`
+    }
+    
+    if(game.name ==='Brothers: A Tale of Two Sons'){
+        game.price='10.99'
+        game.description=`Join the brothers on their epic fairy tale journey, created by Josef Fares, the visionary Swedish director, and premier developer Starbreeze Studios.
+        Control both brothers at the same time: a single player game mechanic, but cooperative... Never seen before!`
+    }    
+    
+    if(game.name ==='Heavy Rain'){
+        game.price='15.99'
+        game.description=`The season is open to hunt down a murderer known only as the "Origami Killer". Four characters, each with their own investigations, have to be part of a desperate attempt to prevent the murderer from claiming a new victim.`
+    }
+    
+    if(game.name ==='Titanfall 2'){
+        game.price='24.99'
+        game.description=`Includes all Digital Deluxe content, the Starter Pack to level up and unlock items faster, and the custom Underground paint job for the R-201 Carbine.`
+    }
+    
+    if(game.name ==='Resident Evil 7: Biohazard'){
+        game.price='15.99'
+        game.description=`Resident Evil 7 biohazard is the next big installment in the renowned Resident Evil series and marks a new milestone for the franchise as it taps into its roots and opens the door to a truly terrifying scare experience.`
+    }
+    
+    if(game.name ==='Cities: Skylines'){
+        game.price='24.99'
+        game.description=`It introduces new elements to the gameplay to capture the excitement and intricacies of maintaining a real city, while expanding on some of the familiar themes of the urban development experience.`
+    }
+    
+    if(game.name ==='Batman: Arkham City - Game of the Year Edition'){
+        game.price='14.99'
+        game.description=`Batman: Arkham City is based on the intense atmosphere of Batman: Arkham Asylum, taking players through the vast Arkham City (universe five times larger than the Batman: Arkham Asylum game) the new maximum security "home" For all the thugs, gangsters and criminal minds in Gotham City.`
+    }
+    
+    if(game.name ==='SEGA Mega Drive and Genesis Classics'){
+        game.price='19.52'
+        game.description=`SEGA's collection of Mega Drive & Genesis Classics comes to a new generation, now updated with even more features: online multiplayer, achievements, mirror mode, rewind, save states, VR and more! Over 50 classic games in one great package. Get into the classics!`
+    }
+    
+    if(game.name ==='Batman: Arkham Asylum Game of the Year Edition'){
+        game.price='14.99'
+        game.description=`Experience what it's like to be Batman and face off against Gotham's greatest villains. Explore every corner of Arkham Asylum and roam free on the famous island.`
+    }
+    
+    if(game.name ==='Watch Dogs'){
+        game.price='25.99'
+        game.description=`In a hyper-connected world like the one we find ourselves in today, the city of Chicago operates under ctOS: the most advanced computer network in the United States.`
+    }
+    
+    if(game.name ==='Max Payne 3'){
+        game.price='17.99'
+        game.description=`No longer a New York City cop, Max Payne moves to São Paulo to protect a wealthy family in an effort to finally escape his troubled past. This complete edition of Max Payne 3 includes the complete original game and all previously released downloadable content. `
+    }
+    
+    if(game.name ==='Middle-earth: Shadow of War'){
+        game.price='34.99'
+        game.description=`Enjoy an epic open world, recreated by the award-winning Nemesis system. Forge a new Ring of Power, conquer strongholds in great battles, and rule Mordor with your own army of orcs in Middle-earth™: Shadow of War™.`
+    }
+    
+    if(game.name ==='Far Cry 5'){
+        game.price='46.99'
+        game.description=`Welcome to Hope County, Montana, the land of the brave and the free, but also of the doomsday sect known as "Eden's Gate." Take on cult leader Joseph Seed and his brothers to free the community of Hope.`
+    }
+    
+    if(game.name ==='The Darkness II'){
+        game.price='3.99'
+        game.description=`An intense first person shooter that offers a twisted and gripping tale, modern police drama and supernatural horror.`
+    }
+    if(game.name ==='INSIDE'){
+        game.price='16.99'
+        game.description=`Persecuted and alone, a boy finds himself, without eating or drinking him, in the middle of a dark project.`
+    }
+    if(game.name ==='Shadow of the Tomb Raider'){
+        game.price='29.92'
+        game.description=`As Lara Croft tries to save the world from a Mayan apocalypse, she must become the tomb raider she was destined to be.`
+    }
 
 };
  
