@@ -119,11 +119,11 @@ const addPrice = (game) => {
     }
     if(game.name === "Deus Ex: Mankind Divided") {
         game.price = '29.99';
-        game.description = '';
+        game.description = 'Now an experienced covert operative, Adam Jensen is forced to operate in a world that has grown to despise his kind. Armed with a new arsenal of state-of-the-art weapons and augmentations, he must choose the right approach, along with who to trust, in order to unravel a vast worldwide conspiracy.';
     }
-    if(game.name === "Spec Ops: The Line") {
+    if(game.name === "Spec Ops: The Line") {//
         game.price = '5.99';
-        game.description = 'Now an experienced covert operative, Adam Jensen is forced to operate in a world that has grown to despise his kind. Armed with a new arsenal of state-of-the-art weapons and augmentations, he must choose the right approach, along with who to trust, in order to unravel a vast worldwide conspiracy';
+        game.description = 'A Third-Person modern military Shooter designed to challenge players morality by putting them in the middle of unspeakable situations.';
     }
     if(game.name === "BioShock Remastered") {
         game.price = '4.99';
@@ -284,7 +284,7 @@ const addPrice = (game) => {
     }
     if(game.name === "Star Wars Jedi: Fallen Order") {
         game.price = '14.99';
-        game.description = '';
+        game.description = 'A galaxy-spanning adventure awaits in Star Wars Jedi: Fallen Order, a 3rd person action-adventure title from Respawn. An abandoned Padawan must complete his training, develop new powerful Force abilities, and master the art of the lightsaber - all while staying one step ahead of the Empire';
     }
     if(game.name === "Journey") {  //termina pagina 5
         game.price = '14.99';
