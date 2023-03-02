@@ -9,7 +9,6 @@ const formatedApiGamesPage= async (pageNumber) =>{
     games.results.forEach(game => {
         const {id,name,released,background_image,rating,playtime,platforms,genres,stores,short_screenshots} = game;
         const gameFilteredWithoutPrice = {id,name,released,background_image,rating,playtime,platforms,genres,stores,short_screenshots};
-        // const gameCompleteProperties = addPrice(gameFilteredWithoutPrice); 
         const gameCompleteProperties = addAllProperties(gameFilteredWithoutPrice); 
         clearGames.push(gameCompleteProperties);
     });
