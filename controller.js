@@ -26,7 +26,7 @@ let clearArray = [];
 const completeApiModified = async () => {
     if(!clearArray.length){
         let pagesModified = [];
-        for (let pageNumber = 1; pageNumber < 7 ; pageNumber++) {
+        for (let pageNumber = 1; pageNumber < 9 ; pageNumber++) {
            const modifiedPages = await formatedApiGamesPage(pageNumber);
            pagesModified =  [...pagesModified,...modifiedPages];
         };
