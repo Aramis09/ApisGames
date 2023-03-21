@@ -36,11 +36,11 @@ const addPrice = (game) => {
         game.description = 'Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.';
     }
     if(game.name === "Rocket League") {
-        game.price = 'free';
+        game.price = '1.99';
         game.description = 'Rocket League combines arcade-style soccer with four-wheel mayhem, easy controls, and fluid, physics-based competition.';
     ;};
     if(game.name === "Dota 2") {
-        game.price = 'free';
+        game.price = '3.49';
         game.description = 'Every day, millions of players worldwide enter battle as one of over a hundred Dota heroes. And no matter if its their 10th hour of play or 1,000th, theres always something new to discover. With regular updates that ensure a constant evolution of gameplay, features, and heroes, Dota 2 has taken on a life of its own.';
     };
     if(game.name === "Terraria") {
@@ -52,7 +52,7 @@ const addPrice = (game) => {
         game.description = 'Cyberpunk 2077 is an open-world, action-adventure RPG set in the dark future of Night City — a dangerous megalopolis obsessed with power, glamor, and ceaseless body modification.';
     };
     if(game.name === "Warframe") {
-        game.price = 'free';
+        game.price = '9.99';
         game.description = 'Awaken as an unstoppable warrior and battle alongside your friends in this story-driven free-to-play online action game';
     };
     if(game.name === "Metro 2033") {
@@ -90,7 +90,7 @@ const addPrice = (game) => {
         game.description = 'The original assassin is back! Betrayed by the Agency and hunted by the police, Agent 47 finds himself pursuing redemption in a corrupt and twisted world.';
     }
     if(game.name === "Apex Legends") {
-        game.price = 'free';
+        game.price = '29.99';
         game.description = 'Apex Legends is the award-winning, free-to-play Hero Shooter from Respawn Entertainment. Master an ever-growing roster of legendary characters with powerful abilities, and experience strategic squad play and innovative gameplay in the next evolution of Hero Shooter and Battle Royale.';
     }
     if(game.name === "Hollow Knight") {
@@ -170,7 +170,7 @@ const addPrice = (game) => {
         game.description = 'Detroit: Become Human puts the destiny of both mankind and androids in your hands, taking you to a near future where machines have become more intelligent than humans. Every choice you make affects the outcome of the game, with one of the most intricately branching narratives ever created';
     }
     if(game.name === "Path of Exile") {
-        game.price = 'free';
+        game.price = '15.99';
         game.description = 'You are an Exile, struggling to survive on the dark continent of Wraeclast, as you fight to earn power that will allow you to exact your revenge against those who wronged you. Created by hardcore gamers, Path of Exile is an online Action RPG set in a dark fantasy world.';
     }
     if(game.name === "Stardew Valley") {
@@ -194,7 +194,7 @@ const addPrice = (game) => {
         game.description = 'Garrys Mod is a physics sandbox. There arent any predefined aims or goals. We give you the tools and leave you to play.';
     }
     if(game.name === "PlayerUnknown’s Battlegrounds") {
-        game.price = 'free';
+        game.price = '15.99';
         game.description = 'Play PUBG: BATTLEGROUNDS for free. Land on strategic locations, loot weapons and supplies, and survive to become the last team standing across various, diverse Battlegrounds. Squad up and join the Battlegrounds for the original Battle Royale experience that only PUBG: BATTLEGROUNDS can offer';
     }
     if(game.name === "Sid Meier's Civilization V") {
@@ -291,7 +291,7 @@ const addPrice = (game) => {
         game.description = 'Explore the ancient, mysterious world of Journey as you soar above ruins and glide across sands to discover its secrets. Play alone or in the company of a fellow traveler and explore its vast world together. Featuring stunning visuals and a Grammy-nominated musical score, Journey delivers a breathtaking experience like no other.';
     }
     if(game.name === "Counter-Strike") {
-        game.price = 'free';
+        game.price = '4.99';
         game.description = 'Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.)';
     };
     if(game.name ==='Mad Max'){
